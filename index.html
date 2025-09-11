@@ -1,0 +1,221 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Coming Soon | RCCG Living Word Forney</title>
+
+  <!-- Favicon Links -->
+  <link rel="icon" type="image/png" sizes="512x512" href="./assets/images/favicon/android-chrome-512x512.png">
+  <link rel="icon" type="image/png" sizes="192x192" href="./assets/images/favicon/android-chrome-192x192.png">
+  <link rel="apple-touch-icon" sizes="180x180" href="./assets/images/favicon/apple-touch-icon.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="./assets/images/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon/favicon.ico">
+
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@400;700;900&display=swap" rel="stylesheet">
+
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Outfit', sans-serif;
+      background: linear-gradient(135deg, #1e3a8a, #6d28d9, #9333ea);
+      color: #fff;
+      text-align: center;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+    }
+
+    /* Floating glowing blobs */
+    .blob {
+      position: absolute;
+      border-radius: 50%;
+      filter: blur(120px);
+      opacity: 0.4;
+      animation: float 8s ease-in-out infinite;
+    }
+    .blob1 { width: 400px; height: 400px; background: #9333ea; top: -100px; left: -100px; }
+    .blob2 { width: 500px; height: 500px; background: #2563eb; bottom: -150px; right: -150px; animation-delay: 2s; }
+
+    @keyframes float {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(30px); }
+    }
+
+    .content {
+      position: relative;
+      z-index: 10;
+      padding: 2rem;
+    }
+
+    .logo {
+      width: 150px; /* Bigger Logo */
+      margin: 0 auto 20px;
+      animation: bounce 2s infinite;
+    }
+
+    @keyframes bounce {
+      0%, 100% { transform: translateY(0); }
+      50% { transform: translateY(-10px); }
+    }
+
+    h1 {
+      font-size: 3rem;
+      font-weight: 900;
+      margin-bottom: 0.5rem;
+      text-shadow: 0 0 10px rgba(255,255,255,0.3);
+    }
+
+    p {
+      font-size: 1.2rem;
+      color: #e5e7eb;
+      margin-bottom: 2rem;
+    }
+
+    /* Countdown */
+    .countdown {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+    }
+
+    .time-box {
+      background: rgba(255, 255, 255, 0.1);
+      padding: 1rem;
+      border-radius: 12px;
+      backdrop-filter: blur(6px);
+      min-width: 80px;
+    }
+
+    .time-box h2 {
+      font-size: 2rem;
+      margin: 0;
+      font-weight: 800;
+    }
+
+    .time-box span {
+      font-size: 0.9rem;
+      color: #ddd;
+    }
+
+    /* Social icons */
+    .socials {
+      display: flex;
+      justify-content: center;
+      gap: 1rem;
+    }
+
+    .socials a {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 45px;
+      height: 45px;
+      border-radius: 50%;
+      background: rgba(255,255,255,0.1);
+      transition: 0.3s;
+    }
+
+    .socials a:hover {
+      background: rgba(255,255,255,0.3);
+      transform: scale(1.1);
+    }
+
+    footer {
+      position: absolute;
+      bottom: 15px;
+      width: 100%;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #ccc;
+    }
+  </style>
+</head>
+<body>
+  <!-- Blobs -->
+  <div class="blob blob1"></div>
+  <div class="blob blob2"></div>
+
+  <div class="content">
+    <img src="./assets/images/favicon/android-chrome-192x192.png" alt="Church Logo" class="logo">
+    <h1>RCCG Living Word Forney</h1>
+    <p>Our updated website is coming soon 🚀</p>
+
+    <!-- Countdown -->
+    <div class="countdown">
+      <div class="time-box">
+        <h2 id="days">00</h2>
+        <span>Days</span>
+      </div>
+      <div class="time-box">
+        <h2 id="hours">00</h2>
+        <span>Hours</span>
+      </div>
+      <div class="time-box">
+        <h2 id="minutes">00</h2>
+        <span>Minutes</span>
+      </div>
+      <div class="time-box">
+        <h2 id="seconds">00</h2>
+        <span>Seconds</span>
+      </div>
+    </div>
+
+    <!-- Socials -->
+    <div class="socials">
+     
+          <a href="https://facebook.com/RCCGLWF" target="_blank">
+    <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/facebook.svg" 
+         alt="Facebook" width="22" />
+  </a>
+
+<a href="https://instagram.com" target="_blank">
+  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/instagram.svg" 
+       alt="Instagram" width="22" />
+</a>
+
+<a href="https://www.youtube.com/@rccgLWF" target="_blank">
+  <img src="https://cdn.jsdelivr.net/gh/simple-icons/simple-icons/icons/youtube.svg" 
+       alt="YouTube" width="22" />
+</a>
+
+    </div>
+  </div>
+
+  <footer>
+    © <span id="year"></span> RCCG Living Word Forney. All rights reserved.
+  </footer>
+
+  <script>
+    // Countdown Timer (set launch date here)
+    const launchDate = new Date("Nov 15, 2025 00:00:00").getTime();
+
+    const timer = setInterval(() => {
+      const now = new Date().getTime();
+      const distance = launchDate - now;
+
+      if (distance < 0) {
+        clearInterval(timer);
+        document.querySelector(".countdown").innerHTML = "<h2>We Are Live! 🎉</h2>";
+        return;
+      }
+
+      document.getElementById("days").innerText = Math.floor(distance / (1000 * 60 * 60 * 24));
+      document.getElementById("hours").innerText = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+      document.getElementById("minutes").innerText = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+      document.getElementById("seconds").innerText = Math.floor((distance % (1000 * 60)) / 1000);
+    }, 1000);
+
+    // Year in footer
+    document.getElementById("year").innerText = new Date().getFullYear();
+  </script>
+</body>
+</html>
